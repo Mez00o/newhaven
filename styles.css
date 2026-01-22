@@ -8,7 +8,7 @@
     --bg-main: #0e0e0e;
     --bg-card: #171717;
     --bg-nav: #121212;
-    --accent: #ff3b3b;
+    --accent: #4da6ff; /* light blue accent */
     --text-main: #f2f2f2;
     --text-muted: #b0b0b0;
 }
@@ -177,7 +177,7 @@ section p {
 }
 
 .button:hover {
-    background: #e13232;
+    background: #3b8de6; /* slightly darker blue on hover */
     transform: scale(1.05);
 }
 
@@ -204,4 +204,3 @@ footer {
         max-width: 90px;
     }
 }
-
