@@ -13,6 +13,36 @@
     --text-muted: #b0b0b0;
 }
 
+/* ===== HERO BANNER ===== */
+.hero {
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.85)
+        ),
+        url("assets/banner.png") center/cover no-repeat;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.logo {
+    max-width: 120px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 2.6rem;
+}
+
+.hero p {
+    color: #d0d0d0;
+    margin-top: 10px;
+}
+
+.hero-btn {
+    margin-top: 25px;
+}
+
 body {
     font-family: Arial, sans-serif;
     background: var(--bg-main);
