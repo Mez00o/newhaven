@@ -1,3 +1,4 @@
+/* ===== GLOBAL ===== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,6 +14,13 @@
     --text-muted: #b0b0b0;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
 /* ===== HERO BANNER ===== */
 .hero {
     background: 
@@ -25,9 +33,18 @@
     text-align: center;
 }
 
+.hero .logo {
+    max-width: 220px; /* bigger for hero page */
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
 .logo {
-    max-width: 120px;
-    margin-bottom: 15px;
+    max-width: 180px; /* bigger on other pages */
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .hero h1 {
@@ -43,13 +60,6 @@
     margin-top: 25px;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: var(--bg-main);
-    color: var(--text-main);
-    line-height: 1.6;
-}
-
 /* ===== HEADER ===== */
 header {
     background: linear-gradient(180deg, #141414, #0e0e0e);
@@ -58,7 +68,7 @@ header {
 }
 
 header img {
-    max-width: 110px;
+    max-width: 180px; /* updated logo */
     margin-bottom: 15px;
 }
 
@@ -92,6 +102,7 @@ nav a {
     margin: 8px 14px;
     font-weight: 600;
     font-size: 0.95rem;
+    transition: color 0.2s ease;
 }
 
 nav a:hover {
@@ -177,7 +188,7 @@ section p {
 }
 
 .button:hover {
-    background: #3b8de6; /* slightly darker blue on hover */
+    background: #3399ff;
     transform: scale(1.05);
 }
 
@@ -201,14 +212,11 @@ footer {
     }
 
     .logo {
-        max-width: 90px;
+        max-width: 140px; /* smaller for mobile */
+        margin-bottom: 15px;
     }
-}
 
-nav a:last-child {
-    color: var(--accent);
-}
-
-nav a:last-child:hover {
-    text-decoration: underline;
+    .hero .logo {
+        max-width: 180px; /* hero logo smaller on mobile */
+    }
 }
